@@ -1,0 +1,32 @@
+baseURL = "/"
+relativeurls = true
+languageCode = "en-GB"
+title = "My New Hugo Site"
+theme = "hugo-tea"
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+
+[params]
+  description = "Data science with David Selby"
+
+  # options for highlight.js (version, additional languages, and theme)
+  highlightjsVersion = "9.11.0"
+  highlightjsCDN = "//cdn.bootcss.com"
+  highlightjsLang = ["R", "yaml"]
+  highlightjsTheme = "github"
+
+  MathJaxCDN = "//cdn.bootcss.com"
+  MathJaxVersion = "2.7.1"
+
+  [params.logo]
+  url = "mug.svg"
+  width = 120
+  height = ""
+  alt = "Tea and Stats"
+
+  [params.footerimage]
+  url = "mug.svg"
+  width = 60
+  height = ""

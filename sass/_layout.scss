@@ -1,0 +1,92 @@
+$max-width: 48rem; /* = 1280px */
+
+body {
+  max-width: $max-width;
+  margin: 0 auto;
+  background-color: $colour-bg;
+}
+
+div#wrapper {
+  padding: 0 2rem 2rem;
+  @media screen and (max-width: $small-screen) {
+    padding: 0 1rem 2rem;
+  }
+  box-shadow: #aaa 0 0 1rem 0;
+  background-color: $white;
+}
+
+header#masthead {
+  text-align: center;
+  margin-bottom: 5rem;
+  @media screen and (max-width: $small-screen) {
+    margin-bottom: 1rem;
+  }
+  h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  img {
+    width: 7.5rem;
+    /* border-radius: 50%; */
+    margin-top: 1rem;
+  }
+}
+
+article {
+  border-bottom: 1px dotted $primary;
+  header, footer {
+    text-align:center;
+  }
+  footer {
+    display: block;
+    address {
+      /* Not in use! */
+      display: block;
+      margin-bottom: 0.5em;
+    }
+  }
+  img {
+	max-width: 90%;
+	/* Centre align: */
+	display: block;
+	margin: {
+		left: auto;
+		right: auto
+	}
+  }
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 4rem;
+  @media screen and (max-width: $small-screen) {
+    white-space: pre-line;
+    margin-bottom: 3rem;
+  }
+  a {
+    display: inline-block;
+    margin: 0 .75em;
+    @media screen and (max-width: $small-screen) {
+      margin: 0.75ex 0;
+    }
+  }
+}
+
+main {
+  article:last-of-type {
+    margin-bottom: 2.5rem;
+  }
+  article#singlepost {
+    padding-bottom: 1rem;
+  }
+}
+
+footer#footer {
+  display: block;
+  text-align: center;
+  img {
+    width: 3.75rem;
+    display: block;
+    margin: 0 auto 2rem auto;
+  }
+}

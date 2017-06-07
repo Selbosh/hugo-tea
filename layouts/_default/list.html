@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<main role="main">
+  {{ range .Pages }}
+  <article>
+    <header>
+      <a href="{{ .RelPermalink }}">
+        <h2>{{ .Title }}</h2>
+      </a>
+    </header>
+    <footer>
+      <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
+        {{ .Date.Format "_2 January 2006" }}
+      </time>
+    </footer>
+    {{ .Content }}
+  </article>
+  {{ end }}
+</main>
+
+{{ partial "footer.html" . }}
