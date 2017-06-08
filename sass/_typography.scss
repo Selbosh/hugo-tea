@@ -53,8 +53,8 @@ a {
 article header h2 {
   @extend %header-text;
   font-size: 2rem;
-  line-height: 1.1;
-  margin: .81em 0;
+  line-height: 1.2;
+  margin: .4em 0;
 }
 
 /* Masthead */
@@ -76,16 +76,16 @@ header#masthead {
     font-style: normal;
     color: $colour-meta;
     text-transform: lowercase;
-    letter-spacing: 2px;
+    letter-spacing: .1em;
   }
 }
 
 /* Main navigation menu */
 nav {
   a {
-    font: normal 1rem $face-sans;
-    letter-spacing: 0.1em;
-    text-transform: none;
+    font: normal 1.25rem $face-nav;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
     border-bottom: 1px dotted $colour-accent;
     &:hover,
     &:focus {
@@ -127,9 +127,9 @@ article footer {
 /* Footer and copyright information */
 footer#footer {
   color: $colour-meta;
-  text-transform: uppercase;
-  font: normal 0.8rem $face-sans;
-  letter-spacing: 0.05em;
+  font: normal .75rem $face-footer;
+  letter-spacing: .1em;
+  text-transform: lowercase;
 }
 
 /* Superscripts and subscripts */

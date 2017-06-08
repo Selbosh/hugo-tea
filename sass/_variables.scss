@@ -22,14 +22,15 @@ $colour-link: $secondary;
 $colour-code: $lightgrey;
 
 /* Fonts and typefaces */
-@import '//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700';
+@import '//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700|Roboto';
 
 $base-font-size: 16px;
+$large-font-size: 20px;
 $base-line-height: 1.5;
 $base-font-family: Merriweather, Georgia, serif;
 
 $face-headings: $base-font-family;
 $face-display: "Playfair Display", Georgia, serif;
-$face-sans: $base-font-family;
-
-$large-font-size: 20px;
+$face-sans: Roboto, Helvetica, Arial, sans-serif;
+$face-nav: $face-sans;//$base-font-family;
+$face-footer: $face-sans;//$base-font-family;

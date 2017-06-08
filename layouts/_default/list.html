@@ -1,33 +1,20 @@
 {{ partial "header.html" . }}
 
-<main role="main">
+<main role="main" class="archive">
+  <div class="list">
   {{ range where .Paginator.Pages "Section" "post" }}
-  <article>
-    <header>
-      <a href="{{ .RelPermalink }}">
-        <h2>{{ .Title }}</h2>
-      </a>
-    </header>
-    <footer>
+    <article>
+      <header>
+        <a href="{{ .RelPermalink }}">
+          <h2>{{ .Title }}</h2>
+        </a>
+      </header>
       <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
         {{ .Date.Format "_2 January 2006" }}
       </time>
-    </footer>
-    <p class="summary">
-      {{ if not .Params.excerpt }}
-        {{ .Summary }}
-    </p><!--.summary-->
-        {{ if .Truncated }}
-          <p style="text-align:center;">
-            <a href="{{ .RelPermalink }}">Read More…</a>
-          </p>
-        {{ end }}
-      {{ else }}
-        {{ .Params.excerpt }}
-    </p><!--.summary-->
-      {{ end }}
-  </article>
+    </article>
   {{ end }}
+  </div>
 </main>
 
 {{ partial "footer.html" . }}

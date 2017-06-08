@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import "//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700";
+@import "//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700|Roboto";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -72,12 +72,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   padding: 0 1rem; }
-
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 0 1rem;
-  border-radius: 5px; }
 
 table {
   margin-bottom: 1rem;
@@ -165,8 +159,8 @@ a h6 {
 /* Post titles only */
 article header h2 {
   font-size: 2rem;
-  line-height: 1.1;
-  margin: .81em 0; }
+  line-height: 1.2;
+  margin: .4em 0; }
 
 /* Masthead */
 header#masthead h1 {
@@ -185,13 +179,13 @@ header#masthead aside {
   font-style: normal;
   color: #a3a3a3;
   text-transform: lowercase;
-  letter-spacing: 2px; }
+  letter-spacing: .1em; }
 
 /* Main navigation menu */
 nav a {
-  font: normal 1rem Merriweather, Georgia, serif;
-  letter-spacing: 0.1em;
-  text-transform: none;
+  font: normal 1.25rem Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
   border-bottom: 1px dotted #f5c966; }
   nav a:hover, nav a:focus {
     border-bottom: none; }
@@ -226,9 +220,9 @@ article footer {
 /* Footer and copyright information */
 footer#footer {
   color: #a3a3a3;
-  text-transform: uppercase;
-  font: normal 0.8rem Merriweather, Georgia, serif;
-  letter-spacing: 0.05em; }
+  font: normal 0.75rem Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: .1em;
+  text-transform: lowercase; }
 
 /* Superscripts and subscripts */
 sup, sub {
@@ -355,8 +349,7 @@ body {
   max-width: 48rem; }
 
 header#masthead {
-  text-align: center;
-  margin-bottom: 5rem; }
+  text-align: center; }
   header#masthead h1 {
     margin-top: 0;
     margin-bottom: 1rem; }
@@ -367,26 +360,17 @@ header#masthead {
     width: 7.5rem;
     margin: 1rem auto 0; }
 
-article {
-  border-bottom: 1px dotted #f5c966; }
-  article header, article footer {
-    text-align: center; }
-  article footer {
-    display: block; }
-    article footer address {
-      /* Not in use! */
-      display: block;
-      margin-bottom: 0.5em; }
-  article img {
-    max-width: 90%;
-    /* Centre align: */
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
+article header, article footer {
+  text-align: center;
+  display: block; }
+article img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 nav {
-  text-align: center;
-  margin-bottom: 4rem; }
+  text-align: center; }
   nav ul {
     list-style-type: none;
     margin: 2rem 0 0; }
@@ -394,10 +378,19 @@ nav {
     display: inline-block;
     margin: 0 .75em; }
 
-main article:last-of-type {
-  margin-bottom: 2.5rem; }
-main article#singlepost {
-  padding-bottom: 1rem; }
+main {
+  margin: 2.5rem 0; }
+
+main.archive {
+  /* Post list pages */
+  text-align: center; }
+  main.archive article {
+    margin: 2.5rem 0; }
+
+time {
+  display: block;
+  color: #a3a3a3;
+  margin: .5em 0; }
 
 footer#footer {
   display: block;

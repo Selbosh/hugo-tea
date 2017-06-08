@@ -7,7 +7,6 @@ body { /* Acts as wrapper */
 
 header#masthead {
   text-align: center;
-  margin-bottom: 5rem;
   h1 {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -23,32 +22,22 @@ header#masthead {
 }
 
 article {
-  border-bottom: 1px dotted $colour-accent;
   header, footer {
     text-align:center;
-  }
-  footer {
     display: block;
-    address {
-      /* Not in use! */
-      display: block;
-      margin-bottom: 0.5em;
-    }
   }
   img {
-	max-width: 90%;
-	/* Centre align: */
-	display: block;
-	margin: {
-		left: auto;
-		right: auto
-	}
+    max-width: 100%;
+  	display: block;
+  	margin: {
+  		left: auto;
+  		right: auto
+	  }
   }
 }
 
 nav {
   text-align: center;
-  margin-bottom: 4rem;
   ul {
     list-style-type: none;
     margin: 2rem 0 0;
@@ -60,12 +49,20 @@ nav {
 }
 
 main {
-  article:last-of-type {
-    margin-bottom: 2.5rem;
+  margin: 2.5rem 0;
+}
+
+main.archive { /* Post list pages */
+  text-align: center;
+  article {
+    margin: 2.5rem 0;
   }
-  article#singlepost {
-    padding-bottom: 1rem;
-  }
+}
+
+time {
+  display: block;
+  color: $colour-meta;
+  margin: .5em 0;
 }
 
 footer#footer {
