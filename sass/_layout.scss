@@ -63,11 +63,15 @@ nav {
     white-space: pre-line;
     margin-bottom: 3rem;
   }
-  a {
+  ul {
+    list-style-type: none;
+    margin: 2rem 0 0;
+  }
+  li {
     display: inline-block;
     margin: 0 .75em;
     @media screen and (max-width: $small-screen) {
-      margin: 0.75ex 0;
+      margin: .75ex 0;
     }
   }
 }

@@ -12,4 +12,5 @@
                alt="{{ .Site.Params.logo.alt }}">
           <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
           <aside>{{ .Site.Params.description }}</aside>
+          {{ partial "nav.html" . }}
         </header>
