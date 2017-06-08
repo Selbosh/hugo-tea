@@ -1,0 +1,35 @@
+/* Layout */
+$large-breakpoint: 38rem;
+$large-max-width: 48rem;
+
+/* Choose colours */
+$primary: #f5c966;
+$secondary: #418997;
+$lightteal: #cbe6e6;
+$black: #515151;
+$darkgrey: #777;
+$white: #fff;
+$grey: #a3a3a3;
+$lightgrey: #f5f8fa;
+
+/* Assign colours to generic roles */
+$colour-bg: $white;
+$colour-copy: $black;
+$colour-header: $secondary;
+$colour-meta: $grey;
+$colour-accent: $primary;
+$colour-link: $secondary;
+$colour-code: $lightgrey;
+
+/* Fonts and typefaces */
+@import '//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700';
+
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$base-font-family: Merriweather, Georgia, serif;
+
+$face-headings: $base-font-family;
+$face-display: "Playfair Display", Georgia, serif;
+$face-sans: $base-font-family;
+
+$large-font-size: 20px;
