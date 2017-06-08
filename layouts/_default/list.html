@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <main role="main">
-  {{ range .Pages }}
+  {{ range where .Paginator.Pages "Section" "post" }}
   <article>
     <header>
       <a href="{{ .RelPermalink }}">
