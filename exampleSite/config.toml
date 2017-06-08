@@ -8,14 +8,24 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 [permalinks]
   post = "/:year/:month/:day/:slug/"
 
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+[[menu.main]]
+  name = "GitHub"
+  url = "https://github.com"
+[[menu.main]]
+  name = "Twitter"
+  url = "https://twitter.com"
+
 [params]
-  description = "Data science with David Selby"
+  description = "Just another Hugo site"
 
   # options for highlight.js (version, additional languages, and theme)
   highlightjsVersion = "9.11.0"
   highlightjsCDN = "//cdn.bootcss.com"
-  highlightjsLang = ["R", "yaml"]
-  highlightjsTheme = "github"
+  highlightjsLang = ["r", "yaml"]
+  highlightjsTheme = "github-gist"
 
   MathJaxCDN = "//cdn.bootcss.com"
   MathJaxVersion = "2.7.1"

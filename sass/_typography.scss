@@ -97,7 +97,7 @@ nav {
 /* Code blocks and teletype */
 code, pre {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  background-color: $colour-code;
+  background-color: $colour-code !important; // overrides highlightjs
   font-size: 1rem;
 }
 
