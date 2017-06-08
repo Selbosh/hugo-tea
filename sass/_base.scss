@@ -20,9 +20,6 @@ body {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
   padding: 0 1rem;
-  @media (min-width: $large-breakpoint) {
-    padding: 0;
-  }
 }
 
 

@@ -72,9 +72,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   padding: 0 1rem; }
-  @media (min-width: 38rem) {
-    body {
-      padding: 0; } }
 
 img {
   display: block;
@@ -109,8 +106,9 @@ p {
 a {
   color: #418997;
   text-decoration: none; }
-  a:hover, afocus {
-    text-decoration: underline; }
+  a:hover, a:focus {
+    color: #f5c966;
+    border-bottom: none; }
   a strong {
     color: inherit; }
 
@@ -144,6 +142,26 @@ h5 {
 h6 {
   font-size: 1rem; }
 
+a h1,
+a h2,
+a h3,
+a h4,
+a h5,
+a h6 {
+  color: #418997; }
+  a h1:hover, a h1:focus,
+  a h2:hover,
+  a h2:focus,
+  a h3:hover,
+  a h3:focus,
+  a h4:hover,
+  a h4:focus,
+  a h5:hover,
+  a h5:focus,
+  a h6:hover,
+  a h6:focus {
+    color: #f5c966; }
+
 /* Post titles only */
 article header h2 {
   font-size: 1.75rem;
@@ -156,9 +174,11 @@ header#masthead h1 {
   font: italic normal 5rem "Playfair Display", Georgia, serif;
   text-transform: none;
   letter-spacing: normal; }
-  header#masthead h1 a:hover {
-    color: inherit;
-    /* Disable overlay highlight for masthead */ }
+  header#masthead h1 a {
+    border: none; }
+    header#masthead h1 a:hover, header#masthead h1 a:active {
+      color: inherit;
+      /* Disable overlay highlight for masthead */ }
 header#masthead aside {
   /* Tagline underneath logo */
   font-size: 1.25rem;
@@ -169,10 +189,12 @@ header#masthead aside {
 
 /* Main navigation menu */
 nav a {
-  border-bottom: 1px dotted #f5c966;
   font: normal 1rem Merriweather, Georgia, serif;
   letter-spacing: 0.1em;
-  text-transform: none; }
+  text-transform: none;
+  border-bottom: 1px dotted #f5c966; }
+  nav a:hover, nav a:focus {
+    border-bottom: none; }
 
 /* Code blocks and teletype */
 code, pre {

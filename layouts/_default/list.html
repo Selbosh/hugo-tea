@@ -13,7 +13,19 @@
         {{ .Date.Format "_2 January 2006" }}
       </time>
     </footer>
-    {{ .Content }}
+    <p class="summary">
+      {{ if not .Params.excerpt }}
+        {{ .Summary }}
+    </p><!--.summary-->
+        {{ if .Truncated }}
+          <p style="text-align:center;">
+            <a href="{{ .RelPermalink }}">Read More…</a>
+          </p>
+        {{ end }}
+      {{ else }}
+        {{ .Params.excerpt }}
+    </p><!--.summary-->
+      {{ end }}
   </article>
   {{ end }}
 </main>

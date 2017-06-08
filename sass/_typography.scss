@@ -8,8 +8,9 @@ a {
   color: $colour-link;
   text-decoration: none;
   &:hover,
-  &focus {
-    text-decoration: underline;
+  &:focus {
+    color: $colour-accent;
+    border-bottom: none;
   }
   strong {
     color: inherit;
@@ -33,6 +34,21 @@ em { font-style: italic; }
   }
 }
 
+a {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $colour-link;
+    &:hover,
+    &:focus {
+      color: $colour-accent;
+    }
+  }
+}
+
 /* Post titles only */
 article header h2 {
   @extend %header-text;
@@ -47,8 +63,12 @@ header#masthead {
     font: italic normal 5rem $face-display;
     text-transform: none;
     letter-spacing: normal;
-    a:hover {
-      color:inherit; /* Disable overlay highlight for masthead */
+    a {
+      border: none;
+      &:hover,
+      &:active {
+        color:inherit; /* Disable overlay highlight for masthead */
+      }
     }
   }
   aside { /* Tagline underneath logo */
@@ -63,10 +83,14 @@ header#masthead {
 /* Main navigation menu */
 nav {
   a {
-    border-bottom: 1px dotted $colour-accent;
     font: normal 1rem $face-sans;
     letter-spacing: 0.1em;
     text-transform: none;
+    border-bottom: 1px dotted $colour-accent;
+    &:hover,
+    &:focus {
+      border-bottom: none;
+    }
   }
 }
 
