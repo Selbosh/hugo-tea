@@ -21,6 +21,16 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 [params]
   description = "Just another Hugo site"
 
+  # Enable Font Awesome social icons.
+  # Go to http://fontawesome.io/get-started/
+  # and enter the ".js" URL you are sent in the embed code via e-mail
+  fontawesome = ""
+
+  twitter = ""
+  facebook = ""
+  github = ""
+  linkedin = ""
+
   # options for highlight.js (version, additional languages, and theme)
   highlightjsVersion = "9.11.0"
   highlightjsCDN = "//cdn.bootcss.com"

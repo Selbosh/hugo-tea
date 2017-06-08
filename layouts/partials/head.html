@@ -17,3 +17,5 @@
 
 {{ partial "head_highlightjs" . }}
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" media="all">
+
+{{ with .Site.Params.fontawesome }}<script src="{{ . }}"></script>{{ end }}
