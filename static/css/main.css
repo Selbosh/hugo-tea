@@ -370,7 +370,9 @@ article img {
   margin-right: auto; }
 
 nav {
-  text-align: center; }
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem; }
   nav ul {
     list-style-type: none;
     margin: 2rem 0 0; }
