@@ -1,7 +1,6 @@
 {{ partial "header.html" . }}
 
 <main role="main" class="archive">
-  <div class="list">
   {{ range where .Paginator.Pages "Section" "post" }}
     <article>
       <header>
@@ -14,7 +13,6 @@
       </time>
     </article>
   {{ end }}
-  </div>
 </main>
 
 {{ partial "footer.html" . }}

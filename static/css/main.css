@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import "//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700|Merriweather+Sans:300,,400,700";
+@import "//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700|Merriweather+Sans:300,400";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -180,18 +180,20 @@ header#masthead aside {
   font-size: 1rem;
   font-style: normal;
   font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   color: #b3b3b3;
   text-transform: lowercase;
   letter-spacing: .05em; }
 
 time {
   color: #b3b3b3;
-  font-family: "Merriweather Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
 
 /* Main navigation menu */
 nav a {
   font: normal 1.25rem "Merriweather Sans", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: lowercase;
   border-bottom: 1px dotted #f5c966; }
@@ -233,7 +235,8 @@ footer#footer {
   color: #b3b3b3;
   font: normal 0.75rem "Merriweather Sans", Helvetica, Arial, sans-serif;
   letter-spacing: .1em;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  font-weight: 300; }
 
 /* Superscripts and subscripts */
 sup, sub {
@@ -379,6 +382,9 @@ article img {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+article.single section {
+  margin-top: 3rem; }
 
 nav {
   text-align: center;

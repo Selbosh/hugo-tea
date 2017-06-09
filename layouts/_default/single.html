@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <main role="main">
-  <article>
+  <article class="single">
     <header><h2>{{ .Title }}</h2></header>
     {{ if eq .Section "post" }}
     <footer>
@@ -10,7 +10,9 @@
       </time>
     </footer>
     {{ end }}
+    <section>
     {{ .Content }}
+    </section>
   </article>
 </main>
 

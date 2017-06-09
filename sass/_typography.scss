@@ -76,6 +76,7 @@ header#masthead {
     font-size: 1rem;
     font-style: normal;
     font-family: $face-tagline;
+    font-weight: 300;
     color: $colour-meta;
     text-transform: lowercase;
     letter-spacing: .05em;
@@ -85,13 +86,14 @@ header#masthead {
 time {
   color: $colour-meta;
   font-family: $face-meta;
+  font-weight: 400;
 }
 
 /* Main navigation menu */
 nav {
   a {
     font: normal 1.25rem $face-nav;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.05em;
     text-transform: lowercase;
     border-bottom: 1px dotted $colour-accent;
@@ -143,6 +145,7 @@ footer#footer {
   font: normal .75rem $face-footer;
   letter-spacing: .1em;
   text-transform: lowercase;
+  font-weight: 300;
 }
 
 /* Superscripts and subscripts */
