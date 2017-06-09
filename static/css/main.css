@@ -282,9 +282,7 @@ li {
 
 /* Footnotes section */
 div.footnotes {
-  border-top: 1px dotted #f5c966;
-  padding-top: 1rem;
-  margin-top: 2.5rem; }
+  padding-top: 1rem; }
   div.footnotes ol p, div.footnotes ul p {
     margin: inherit; }
 
