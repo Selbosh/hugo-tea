@@ -9,28 +9,31 @@ $lightteal: #cbe6e6;
 $black: #515151;
 $darkgrey: #777;
 $white: #fff;
-$grey: #a3a3a3;
+$grey: #b3b3b3;
 $lightgrey: #f5f8fa;
 
 /* Assign colours to generic roles */
 $colour-bg: $white;
 $colour-copy: $black;
-$colour-header: $secondary;
+$colour-header: $black; //inherit;
 $colour-meta: $grey;
 $colour-accent: $primary;
 $colour-link: $secondary;
 $colour-code: $lightgrey;
 
 /* Fonts and typefaces */
-@import '//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700|Roboto';
+@import '//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700|Merriweather+Sans:300,,400,700';
 
 $base-font-size: 16px;
 $large-font-size: 20px;
 $base-line-height: 1.5;
-$base-font-family: Merriweather, Georgia, serif;
 
-$face-headings: $base-font-family;
+$base-font-family: Merriweather, Georgia, serif;
 $face-display: "Playfair Display", Georgia, serif;
-$face-sans: Roboto, Helvetica, Arial, sans-serif;
-$face-nav: $face-sans;//$base-font-family;
-$face-footer: $face-sans;//$base-font-family;
+$face-sans: "Merriweather Sans", Helvetica, Arial, sans-serif;
+
+$face-headings: $face-sans;
+$face-tagline: $face-sans;
+$face-nav: $face-sans;
+$face-footer: $face-sans;
+$face-meta: $face-sans;

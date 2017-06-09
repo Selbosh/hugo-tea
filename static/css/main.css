@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import "//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700|Roboto";
+@import "//fonts.googleapis.com/css?family=Playfair+Display:400i|Merriweather:400,400i,700|Merriweather+Sans:300,,400,700";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -113,10 +113,11 @@ em {
   font-style: italic; }
 
 h1, h2, h3, h4, h5, h6, article header h2 {
-  font-family: Merriweather, Georgia, serif;
-  color: #418997;
+  font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+  color: #515151;
   font-style: normal;
-  margin: 2em 0 0.5em; }
+  margin: 2em 0 0.5em;
+  font-weight: 400; }
 
 h1 {
   font-size: 2rem; }
@@ -169,21 +170,28 @@ header#masthead h1 {
   text-transform: none;
   letter-spacing: normal; }
   header#masthead h1 a {
-    border: none; }
-    header#masthead h1 a:hover, header#masthead h1 a:active {
-      color: inherit;
-      /* Disable overlay highlight for masthead */ }
+    border: none;
+    /*&:hover,
+    &:active {
+      color: $colour-link; // Disable overlay highlight for masthead
+    }*/ }
 header#masthead aside {
   /* Tagline underneath logo */
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
-  color: #a3a3a3;
+  font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+  color: #b3b3b3;
   text-transform: lowercase;
-  letter-spacing: .1em; }
+  letter-spacing: .05em; }
+
+time {
+  color: #b3b3b3;
+  font-family: "Merriweather Sans", Helvetica, Arial, sans-serif; }
 
 /* Main navigation menu */
 nav a {
-  font: normal 1.25rem Roboto, Helvetica, Arial, sans-serif;
+  font: normal 1.25rem "Merriweather Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: lowercase;
   border-bottom: 1px dotted #f5c966; }
@@ -203,6 +211,9 @@ pre {
   border-left: 0.3rem solid #ccc;
   overflow-x: auto; }
 
+.hljs {
+  color: #515151; }
+
 p > code {
   /* In-line code only */
   letter-spacing: -0.05em;
@@ -215,12 +226,12 @@ p > code {
 /* Post date info at top of articles */
 article footer {
   display: inline-block;
-  color: #a3a3a3; }
+  color: #b3b3b3; }
 
 /* Footer and copyright information */
 footer#footer {
-  color: #a3a3a3;
-  font: normal 0.75rem Roboto, Helvetica, Arial, sans-serif;
+  color: #b3b3b3;
+  font: normal 0.75rem "Merriweather Sans", Helvetica, Arial, sans-serif;
   letter-spacing: .1em;
   text-transform: lowercase; }
 
@@ -391,7 +402,6 @@ main.archive {
 
 time {
   display: block;
-  color: #a3a3a3;
   margin: .5em 0; }
 
 footer#footer {

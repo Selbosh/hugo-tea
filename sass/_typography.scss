@@ -25,6 +25,7 @@ em { font-style: italic; }
   color: $colour-header;
   font-style: normal;
   margin: 2em 0 0.5em;
+  font-weight: 400;
 }
 
 @each $header, $size in (h1: 2rem, h2: 1.75rem, h3: 1.5rem, h4: 1.3rem, h5: 1.15rem, h6: 1rem) {
@@ -65,25 +66,32 @@ header#masthead {
     letter-spacing: normal;
     a {
       border: none;
-      &:hover,
+      /*&:hover,
       &:active {
-        color:inherit; /* Disable overlay highlight for masthead */
-      }
+        color: $colour-link; // Disable overlay highlight for masthead
+      }*/
     }
   }
   aside { /* Tagline underneath logo */
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
+    font-family: $face-tagline;
     color: $colour-meta;
     text-transform: lowercase;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
   }
+}
+
+time {
+  color: $colour-meta;
+  font-family: $face-meta;
 }
 
 /* Main navigation menu */
 nav {
   a {
     font: normal 1.25rem $face-nav;
+    font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: lowercase;
     border-bottom: 1px dotted $colour-accent;
@@ -107,6 +115,11 @@ pre {
   line-height: 1.3;
   border-left: 0.3rem solid #ccc;
   overflow-x: auto;
+}
+
+.hljs {
+  // Match highlighted code to body text
+  color: $colour-copy;
 }
 
 p>code { /* In-line code only */
