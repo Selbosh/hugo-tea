@@ -15,6 +15,8 @@
 <link href="{{ .RSSLink | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
 
+<link rel="shortcut icon" href="/favicon.ico">
+
 {{ partial "head_highlightjs" . }}
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" media="all">
 

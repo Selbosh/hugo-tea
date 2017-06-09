@@ -35,12 +35,12 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
   MathJaxVersion = "2.7.1"
 
   [params.logo]
-  url = "mug.svg"
+  url = "logo.svg"
   width = 120
   height = ""
   alt = "Tea and Stats"
 
   [params.footerimage]
-  url = "mug.svg"
+  url = "logo.svg"
   width = 60
   height = ""
