@@ -126,6 +126,7 @@ pre {
 
 p>code { /* In-line code only */
   letter-spacing: -0.05em;
+  font-size: inherit;
   /* Space in-line code apart from surrounding words
      (Inspired by GitHub's CSS) */
   &::before, &::after {
