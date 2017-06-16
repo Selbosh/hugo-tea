@@ -3,6 +3,8 @@ relativeurls = true
 languageCode = "en-GB"
 title = "My New Hugo Site"
 theme = "hugo-tea"
+canonifyUrls = true
+googleAnalytics = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 
 [permalinks]
