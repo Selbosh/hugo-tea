@@ -12,11 +12,16 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
   name = "About"
   url = "/about/"
 
+[author]
+	name = "John Smith"
+	url = "http://www.example.com"
+	
 [social]
-	facebook 	= ""
-  twitter 	= ""
-	linkedin 	= ""
-  github 		= ""
+	facebook 		= ""
+  twitter 		= ""
+	linkedin 		= ""
+  github 			= ""
+	googleplus  = ""
 	
 [params]
   description = "Just another Hugo site"
