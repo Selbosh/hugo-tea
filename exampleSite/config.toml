@@ -24,6 +24,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 	googleplus  = ""
 	
 [params]
+	tagline 		= "Just another Hugo site"
   description = "Just another Hugo site"
 
   # Enable Font Awesome social icons.
