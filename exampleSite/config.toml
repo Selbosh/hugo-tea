@@ -19,10 +19,9 @@ pygmentsCodeFences = false # If enabled, will conflict with highlight.js
 	
 [social]
 	facebook 		= ""
-  twitter 		= ""
+  bluesky 		= ""
 	linkedin 		= ""
   github 			= ""
-	googleplus  = ""
 	
 [params]
 	tagline 		= "Just another Hugo site"

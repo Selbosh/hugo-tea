@@ -4,9 +4,9 @@
 name = "Hugo Tea"
 license = "MIT"
 licenselink = "https://github.com/Selbosh/hugo-tea/blob/master/LICENSE.md"
-description = ""
+description = "A minimalist, single-column blog theme"
 homepage = "https://github.com/Selbosh/hugo-tea"
-tags = []
+tags = ["blog", "minimal", "minimalist", "light", "white"]
 features = ["blog", "minimal"]
 min_version = "0.79.1"
 

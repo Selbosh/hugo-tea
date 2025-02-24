@@ -22,10 +22,10 @@
         {{ else }} LinkedIn {{ end }}
       </a>
     </li>{{ end }}
-    {{ with .Site.Social.twitter }}<li>
-      <a href="https://twitter.com/{{ . }}">
-        {{ if $fa }}<i class="fa fa-twitter"></i>
-        {{ else }} Twitter {{ end }}
+    {{ with .Site.Social.bluesky }}<li>
+      <a href="https://bsky.app/profile/{{ . }}">
+        {{ if $fa }}<i class="fa-brands fa-bluesky"></i>
+        {{ else }} Bluesky {{ end }}
       </a>
     </li>{{ end }}
   </ul>
